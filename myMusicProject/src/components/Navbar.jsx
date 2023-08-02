@@ -1,10 +1,10 @@
-import React from "react";
-
+import React from "react"
+import Logo1 from '/images/logo1.png'
 
 export default function NavBar() {
     return (
         <nav>
-            <h1>My Music App</h1>
+            <img src={Logo1} alt="" />
         </nav>
     )
 }
