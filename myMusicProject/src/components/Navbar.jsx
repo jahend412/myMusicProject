@@ -4,7 +4,11 @@ import Logo1 from '/images/logo1.png'
 export default function NavBar() {
     return (
         <nav>
-            <img src={Logo1} alt="" />
+            <img
+                className="nav-logo"
+                src={Logo1}
+                alt=""
+            />
         </nav>
     )
 }

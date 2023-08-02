@@ -13,3 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+nav {
+  background-color: black;
+}
+
+.nav-logo {
+  height: 50rem;
+  width: 100%;
+  border: 5px black solid;
+}
