@@ -1,5 +1,4 @@
 import React from 'react';
-import './AudioFiles.css'
 
 export default function Player({
     song
