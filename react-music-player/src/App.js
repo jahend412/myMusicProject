@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Player from './components/player/player';
+import AudioFiles from './components/AudioFiles/AudioFiles';
 import { audioData } from './audioData';
 
 export default function App() {
@@ -10,7 +10,7 @@ export default function App() {
     <div className="App">
       {songs.map((song) => {
         return (
-          <Player song={song} />
+          <AudioFiles song={song} />
         )
       })}
     </div >
