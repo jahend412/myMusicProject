@@ -5,12 +5,8 @@ import './player.css';
 export default function Player({ song }) {
     return (
         <div className='player-container'>
-            < h1 > {song.title}</h1 >
-            <p> {song.artist} </p>
+            <h3> {song.title} </h3>
+            <h4> {song.artist} </h4>
         </div >
     );
 }
-
-
-// export default class Player extends Component {
-

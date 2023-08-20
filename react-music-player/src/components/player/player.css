@@ -2,10 +2,10 @@
 
 .player-container {
     text-align: center;
-    background-color: #012773;
+    background-color: #2a2f3b;
     display: flex;
     flex-direction: column;
     color: #f4f1c9;
     font-family: 'Merriweather', serif;
-
+    padding: 20px;
 }
