@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.player-container {
+    text-align: center;
+    background-color: #012773;
+    display: flex;
+    flex-direction: column;
+    color: #f4f1c9;
+    font-family: 'Merriweather', serif;
+
+}
