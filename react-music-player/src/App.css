@@ -28,22 +28,28 @@
 }
 
 .player-main {
-  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
 }
 
 .player-card {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   background-color: #2a2f3b;
   border-radius: 20px;
-  box-shadow: 10px 8px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(33, 222, 77, 0.27);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(33, 222, 77, 0.27);
+  box-shadow: 10px 10px 5px 0px rgba(33, 222, 77, 0.27);
 }
 
 .control-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 35vh;
   cursor: pointer;
   gap: 20px;
 }
@@ -64,7 +70,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 100px;
+  top: 280px;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -75,7 +81,22 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 140px;
+  top: 330px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.music-image {
+  width: 250px;
+  aspect-ratio: 1/1;
+  border-radius: 10%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(33, 222, 77, 0.27);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(33, 222, 77, 0.27);
+  box-shadow: 10px 10px 5px 0px rgba(33, 222, 77, 0.27);
 }

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import AudioFiles from './components/AudioFiles/AudioFiles';
+import AudioFiles from './components/AudioFiles';
 import { audioData } from './audioData';
-import Player from './components/Player/Player';
+import Player from './components/Player';
 
 export default function App() {
   const [songs, setSongs] = useState(audioData);
@@ -35,16 +35,7 @@ export default function App() {
         />
       </div>
 
-      <div className="App">
-        {songs.map((song, index) => {
-          return (
-            <AudioFiles
-              song={song}
-              getSongData={getSongData}
-            />
-          )
-        })}
-      </div >
+
     </>
   );
 }
