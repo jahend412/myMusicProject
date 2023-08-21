@@ -6,7 +6,9 @@ import {
 
 export default function Player({
     currentSong,
-    currentIndex
+    currentIndex,
+    nextSong,
+    prevSong
 }) {
     const [isPlaying, setIsPlaying] = useState(false);
     const audioRef = useRef(null)
@@ -31,8 +33,8 @@ export default function Player({
             <div className="player-card">
                 {currentSong ? (
                     <div>
-                        <h3 className='activeSong-name'>{currentSong.title} </h3>
-                        <h5 className='activeArtist-name'>{currentSong.artist} </h5>
+                        <h2 className='activeSong-name'>{currentSong.title} </h2>
+                        <h4 className='activeArtist-name'>{currentSong.artist} </h4>
                     </div>
                 ) : (
                     ''
@@ -42,6 +44,7 @@ export default function Player({
                     <BsSkipStartFill
                         className='icon-2'
                         size={50}
+                        onClick={prevSong}
                     />
 
                     {isPlaying ? (
@@ -59,6 +62,7 @@ export default function Player({
                     <BsSkipEndFill
                         className='icon-2'
                         size={50}
+                        onClick={nextSong}
                     />
 
 

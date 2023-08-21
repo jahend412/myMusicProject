@@ -7,11 +7,22 @@ import Player from './components/Player/Player';
 export default function App() {
   const [songs, setSongs] = useState(audioData);
   const [currentIndex, setCurrentIndex] = useState(null);
-  const [currentSong, setCurrentSong] = useState({});
+  const [currentSong, setCurrentSong] = useState(songs[0]);
   const getSongData = (song, index) => {
     setCurrentIndex(index)
     setCurrentSong(song)
   }
+
+  const nextSong = () => {
+    setCurrentIndex(currentIndex + 1)
+    setCurrentSong(audioData[currentIndex + 1])
+  }
+
+  const prevSong = () => {
+    setCurrentIndex(currentIndex - 1)
+    setCurrentSong(audioData[currentIndex - 1])
+  }
+
   return (
 
     <>
@@ -19,6 +30,8 @@ export default function App() {
         <Player
           currentSong={currentSong}
           currentIndex={currentIndex}
+          nextSong={nextSong}
+          prevSong={prevSong}
         />
       </div>
 
