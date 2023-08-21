@@ -1,15 +1,18 @@
 export const audioData = [
     {
-        title: "Wish You Were Here",
-        artist: "Pink Floyd"
+        title: "Golden Teachers",
+        artist: "Band from Madison",
+        music: require('./audios/golden_teachers.mp3')
     },
     {
-        title: "Stairway to Heaven",
-        artist: "Led Zeppelin"
+        title: "Space Turkey",
+        artist: "Band from Madison",
+        music: require('./audios/space-turkey-v3.mp3')
     },
     {
-        title: "Bohemian Rhapsody",
-        artist: "Queen"
+        title: "Lava Milkshake",
+        artist: "Band from Madison",
+        music: require('./audios/lava_milkshake.mp3')
     },
 
 ];
