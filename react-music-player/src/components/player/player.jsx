@@ -1,42 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
-    BsPlayBtn, BsPauseBtn, BsSkipStartFill, BsSkipEndFill, BsShuffle, BsArrowRepeat, BsVolumeMute, BsVolumeDown, BsVolumeUp,
+    BsPlayFill, BsPauseFill, BsSkipStartFill, BsSkipEndFill, BsShuffle, BsArrowRepeat, BsVolumeMute, BsVolumeDown, BsVolumeUp,
 } from 'react-icons/bs';
 
 export default function Player() {
+    const [isPlaying, setIsPlaying] = useState(false);
+    const togglePlay = () => {
+        setIsPlaying(!isPlaying);
+    }
+
     return (
         <div>
             <div className="player-card">
+                <h3 className='activeSong-name'>Track </h3>
+                <h5 className='activeArtist-name'>Artist </h5>
                 <div className="control-icon">
-                    <BsPlayBtn
-                        color='white'
-                        size={50} />
-                    <BsPauseBtn
-                        color='white'
-                        size={50} />
+                    {isPlaying ? (
+                        <BsPauseFill
+                            className='icon-1'
+                            size={50}
+                            onClick={togglePlay}
+                        />
+                    ) : (
+                        <BsPlayFill
+                            className='icon-1'
+                            size={50}
+                            onClick={togglePlay}
+                        />)}
+
+
                     <BsSkipStartFill
-                        color='white'
-                        size={50} />
+                        className='icon-2'
+                        size={50}
+                    />
                     <BsSkipEndFill
-                        color='white'
-                        size={50} />
+                        className='icon-2'
+                        size={50}
+                    />
                     <BsShuffle
-                        color='white'
-                        size={50} />
+                        className='icon-2'
+                        size={50}
+                    />
                     <BsArrowRepeat
-                        color='white'
-                        size={50} />
+                        className='icon-2'
+                        size={50}
+                    />
                     <BsVolumeMute
-                        color='white'
-                        size={50} />
+                        className='icon-2'
+                        size={50}
+                    />
                     <BsVolumeDown
-                        color='white'
-                        size={50} />
+                        className='icon-2'
+                        size={50}
+                    />
                     <BsVolumeUp
-                        color='white'
-                        size={50} />
+                        className='icon-2'
+                        size={50}
+                    />
+
                 </div>
             </div>
         </div>
-    );   
+    );
 }

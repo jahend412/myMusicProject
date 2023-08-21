@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../Scrimba"
+		},
+		{
+			"path": "../../../myMovie-client"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Learn-React",
+		"liveServer.settings.port": 5501
+	}
+}

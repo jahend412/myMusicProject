@@ -47,3 +47,35 @@
   cursor: pointer;
   gap: 20px;
 }
+
+.icon-1 {
+  color: #eee78e;
+
+}
+
+.icon-2 {
+  color: white;
+}
+
+
+.activeSong-name {
+  color: white;
+  font-family: 'Merriweather', serif;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.activeArtist-name {
+  color: white;
+  font-family: 'Merriweather', serif;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
