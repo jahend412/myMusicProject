@@ -1,14 +1,18 @@
 import React from 'react'
+import { createRoot } from 'react-dom/client'
 import NavBar from '/src/components/NavBar'
 import MainView from '/src/components/MainView'
 import Footer from '/src/components/Footer'
 
-export default function App() {
+import './App.css';
+
+function App() {
+
   return (
-    <div className="container">
-      <NavBar />
-      <MainView />
-      <Footer />
+    <div className="App">
+      <h1>Player</h1>
     </div>
-  )
+  );
 }
+
+export default App;
