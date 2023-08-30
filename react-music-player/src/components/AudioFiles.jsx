@@ -6,7 +6,7 @@ export default function AudioFiles({
     index
 }) {
     return (
-        <div className='player-container' onClick={() => getSongData(song)}>
+        <div className='player-container' onClick={() => getSongData(song, index)}>
             <h3> {song.title} </h3>
 
             <h4> {song.artist} </h4>
