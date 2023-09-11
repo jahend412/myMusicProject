@@ -8,6 +8,12 @@ provider:
   runtime: nodejs18.x
   profile: serverlessUser
 
+plugins:
+  - serverless-s3-sync
+custom:
+  s3Sync:
+    - bucketName: bucketofmusic44
+      localDir: UploadData
 
 functions:
   hello:
